@@ -1,120 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<WAmeta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KarkadEH | Hibiscus, differently.</title>
-<style>
-* { box-sizing: border-box; }
-
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f7f0e5;
-  color: #29201d;
-}
-
-main {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 45px 24px;
-}
-
-.wrap {
-  width: 100%;
-  max-width: 760px;
-  text-align: center;
-}
-
-.flower {
-  font-size: 54px;
-  color: #8b1735;
-  margin-bottom: 14px;
-}
-
-h1 {
-  margin: 0;
-  color: #8b1735;
-  font-size: clamp(52px, 12vw, 92px);
-  line-height: .95;
-  letter-spacing: -4px;
-}
-
-.tagline {
-  margin: 22px 0 34px;
-  font-size: clamp(23px, 5vw, 34px);
-  font-weight: 600;
-}
-
-.rule {
-  width: 70px;
-  height: 4px;
-  margin: 0 auto 34px;
-  background: #8b1735;
-}
-
-p {
-  margin: 0 auto 22px;
-  max-width: 650px;
-  font-size: 18px;
-  line-height: 1.65;
-}
-
-.names {
-  color: #8b1735;
-  font-weight: 700;
-}
-
-.launch {
-  margin-top: 38px;
-  font-size: 15px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-.contact {
-  display: inline-block;
-  margin-top: 16px;
-  color: #8b1735;
-  font-size: 17px;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.contact:hover {
-  text-decoration: underline;
-}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FBEEDE">
+  <meta name="description" content="KarkadEH — hibiscus, differently. A small-batch specialty food brand coming to Ontario.">
+  <title>KarkadEH | Hibiscus, differently.</title>
+  <style>
+    :root { color-scheme: light; --cream:#FBEEDE; --burgundy:#430000; --red:#C60623; }
+    * { box-sizing:border-box; }
+    html { min-height:100%; background:var(--cream); }
+    body { margin:0; min-height:100vh; font-family:Georgia, "Times New Roman", serif; color:var(--burgundy); background:var(--cream); }
+    main { min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:clamp(32px,7vw,72px) 24px; }
+    .logo { display:block; width:min(100%, 680px); height:auto; }
+    h1 { font-size:clamp(24px,4vw,38px); font-weight:normal; letter-spacing:.025em; margin:8px 0 18px; }
+    .rule { width:48px; height:1px; background:var(--red); margin:12px auto 28px; }
+    p { max-width:490px; font-size:clamp(16px,2.4vw,19px); line-height:1.65; margin:0 0 24px; }
+    .coming { font: 600 11px/1.5 Arial,sans-serif; letter-spacing:.22em; text-transform:uppercase; color:var(--red); margin-bottom:18px; }
+    a { color:var(--burgundy); text-underline-offset:4px; }
+    footer { font: 12px/1.5 Arial,sans-serif; margin-top:40px; opacity:.75; }
+    @media(max-width:540px){.logo{width:min(100%,480px)} main{justify-content:center} }
+  </style>
 </head>
-
 <body>
-<main>
-  <div class="wrap">
-    <div class="flower">✦</div>
-
-    <h1>KarkadEH</h1>
-    <div class="tagline">Hibiscus, differently.</div>
-
-    <div class="rule"></div>
-
-      <p>
-  Around the world, hibiscus is known as
-  <span class="names">karkadeh, flor de jamaica, sorrel and bissap.</span>
-</p>
-
-<p>
-  KarkadEH is finding new flavours in a familiar flower.
-</p>
-
-    <div class="launch">Launching in Ontario</div>
-
-    <a class="contact" href="mailto:info@karkadeh.ca">
-      info@karkadeh.ca
-    </a>
-  </div>
-</main>
+  <main>
+    <img class="logo" src="karkadeh-logo.png" alt="KarkadEH" width="2200" height="1400">
+    <h1>Hibiscus, differently.</h1>
+    <div class="rule" aria-hidden="true"></div>
+    <p>Exploring hibiscus beyond the teacup through distinctive flavours and small-batch specialty foods.</p>
+    <div class="coming">Launching in Ontario</div>
+    <p>For inquiries: <a href="mailto:info@karkadeh.ca">info@karkadeh.ca</a></p>
+    <footer>© 2026 KarkadEH</footer>
+  </main>
 </body>
 </html>
